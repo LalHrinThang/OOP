@@ -12,8 +12,9 @@ if file:
 
     print(f"This is with write method {data2}")
 
-    # data3 = file3.write(" : This is appended message")
-    # print(f"This is with append method {data3}")
+    data3 = file3.write(" : This is appended message")
+    print(f"This is with append method {data3}")
+    # The Previous content was Hello I'm Lal Hrin Thang
     file.close()
 else:
     print("There is no file")
