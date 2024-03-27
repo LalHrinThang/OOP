@@ -15,4 +15,14 @@ jsonData = requests.get(newUrl).json()
 
 #dict type
 #print(jsonData)
-print(jsonData["coord"])
+print(f'Before Update : {jsonData["coord"]}')
+
+jsonData["coord"]["lon"] = 98
+
+print(f"After Updating Coordinate : {jsonData['coord']}\n")
+
+
+print("This all key can be updated by user\n")
+
+for i in jsonData:
+    print(i)
