@@ -9,9 +9,9 @@ dbConnection = mysql.connector.connect(
 
 
 dbcursor = dbConnection.cursor()
-dbcursor.execute("CREATE TABLE students(id int primary key AUTO_INCREMENT,name VARCHAR(30),age SMALLINT,class TINYINT)")
+#dbcursor.execute("CREATE TABLE students(id int primary key AUTO_INCREMENT,name VARCHAR(30),age SMALLINT,class TINYINT)")
 
-#dbcursor.execute("ALTER TABLE Table ADD hobby VARCHAR(30)")
+dbcursor.execute("ALTER TABLE students ADD hobby VARCHAR(30)")
 
 
 dbcursor.execute("DESCRIBE students")
