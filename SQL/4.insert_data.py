@@ -17,7 +17,7 @@ insert_data_type= "INSERT INTO students (id,name,age,class,hobby)values(%s,%s,%s
 
 insert_data = [(101,"Lal Hrin Thang",24,12,"Programming"),(102,"Lal Hrin Thang",24,12,"Programming"),(103,"Lal Hrin Thang",24,12,"Programming")]
 dbcursor.executemany(insert_data_type,insert_data)
-
+dbConnection.commit()
 print("Data successfully inserted")
 print(dbcursor.rowcount)
 
