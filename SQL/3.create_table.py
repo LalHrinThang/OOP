@@ -11,5 +11,6 @@ myCursor = myDB_connection.cursor()
 
 #myCursor.execute("CREATE TABLE FirstTB(id int primary key AUTO_INCREMENT,name VARCHAR(30),age SMALLINT,class TINYINT)")
 
+myCursor.execute("DESCRIBE FirstTB")
 for database in myCursor:
     print(database)
