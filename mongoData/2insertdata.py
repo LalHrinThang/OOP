@@ -13,7 +13,7 @@ except Exception as error:
     print(error)
 
 
-data = {"name" : "LalHrinThang","age" : 22, "Hobby" : "Arduino"}
+data = {"name" : "Benjamin","age" : 23, "Hobby" : "Python Programming"}
 
 try:
     collection.insert_one(data)
