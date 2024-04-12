@@ -29,13 +29,13 @@ try:
     for d in data_query3:
         print(d)    
     print("This is also multiple Query")
-    # result = collection.insert_many(data)
-    # print(result.inserted_id)
-    # _ids = collection.find().distinct("_id")
+    result = collection.insert_many(data)
+    print(result.inserted_id)
+    _ids = collection.find().distinct("_id")
 
-    # print(_ids)
-    # _name = collection.find().distinct("name")
-    # print(_name)
+    print(_ids)
+    _name = collection.find().distinct("name")
+    print(_name)
 
     # data_finding = collection.find_one()
     # print(data_finding)
