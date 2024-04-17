@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'restapp',
-    'restframework',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'rest_testing',
         'USER': 'postgres',
-        'PASS': '004962',
+        'PASSWORD': '004962',
         'HOST': 'localhost',
     }
 }
